@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Concepts</title>
+  <style>
+    * {
+      margin: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.5;
+      padding: 20px;
+      background-color:white;
+    }
+    
+    
+    .box-model {
+      background-color: green;
+      border: 5px solid blue;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .box-model h2 {
+      color: green;
+      margin-bottom: 10px;
+    }
+    
+    
+    .dimension-example {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .box {
+      text-align: center;
+      line-height: 100px;
+      background-color: #28a745;
+      color: green;
+      font-weight: bold;
+    }
+    
+    .width-height {
+      width: 100px;
+      height: 100px;
+    }
+    
+    
+    .display-example {
+      margin-top: 20px;
+    }
+    
+    .inline-box {
+      display: inline;
+      background-color: #6c757d;
+      color: green;
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    .block-box {
+      display: block;
+      background-color:wheat;
+      color: green;
+      padding: 10px;
+      margin: 5px 0;
+    }
+    
+    .inline-block-box {
+      display: inline-block;
+      background-color: #ffc107;
+      color: green;
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    
+    .float-example {
+      margin-top: 20px;
+    }
+    
+    .float-box {
+      width: 150px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: green;
+      background-color: #dc3545;
+      margin: 5px;
+    }
+    
+    .float-left {
+      float: left;
+    }
+    
+    .float-right {
+      float: right;
+    }
+    
+    .clear-box {
+      clear: both;
+      background-color: green;
+      color: green;
+      padding: 10px;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  
+  <div class="box-model">
+    <h2> Box Model</h2>
+    <p>my name is virat</p>
+  </div>
+
+  
+  <div class="dimension-example">
+    <div class="box width-height">Box 1</div>
+    <div class="box width-height">Box 2</div>
+  </div>
+
+  
+  <div class="display-example">
+    <h2> Display Property</h2>
+    <div class="inline-box">Inline 1</div>
+    <div class="inline-box">Inline 2</div>
+    <div class="block-box">Block Box</div>
+    <div class="inline-block-box">Inline-Block Box</div>
+  </div>
+
+  
+  <div class="float-example">
+    <h2>Float and Clear</h2>
+    <div class="float-box float-left">Float Left</div>
+    <div class="float-box float-right">Float Right</div>
+    <div class="clear-box">Cleared Content</div>
+  </div>
+</body>
+</html>
+
+      
